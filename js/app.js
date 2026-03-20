@@ -5,19 +5,19 @@
 
 const STATE = {
     products: [
-        { id: 1, name: 'Bach Rescue Remedy Pet 10мл', price: 1200, img: 'img/bach-rescue.webp', desc: 'Антистресс для питомцев' },
+        { id: 1, name: 'Bach Rescue Remedy Pet 10мл', price: 1200, img: 'img/bach-rescue-remedy-pet.webp', desc: 'Антистресс для питомцев' },
         { id: 2, name: 'Gelacan Darling', price: 950, img: 'img/gelacan-darling.webp', desc: 'Жевательная паста' },
-        { id: 3, name: 'TIAKI Slow Feeder Mandala', price: 1800, img: 'img/tiaki-mandala.webp', desc: 'Медленный фидер' },
-        { id: 4, name: 'Zesty Paws Healthy Aging', price: 2200, img: 'img/zesty-paws.webp', desc: 'Для пожилых собак' },
-        { id: 5, name: 'Eheim Substrat Pro 720г', price: 1100, img: 'img/eheim-substrat.webp', desc: 'Биофильтр аквариум' },
-        { id: 6, name: 'ZARAHOME Pet Bowl Stand', price: 1400, img: 'img/zarahome-bowl.webp', desc: 'Миска с подставкой' },
-        { id: 7, name: 'Rojeco Интерактивный мяч', price: 750, img: 'img/rojeco-ball.webp', desc: 'Для кошек' },
-        { id: 8, name: 'DERMOSCENT Крем для кожи', price: 1600, img: 'img/dermescent-cream.webp', desc: 'Уход за кожей' },
-        { id: 9, name: 'DERMOSCENT Pyoclean', price: 1300, img: 'img/pyoclean.webp', desc: 'Очиститель ушей' },
-        { id: 10, name: 'Trixie Пальто для собак', price: 1900, img: 'img/trixie-coat.webp', desc: 'Теплая куртка' },
-        { id: 11, name: 'Inodorina Песок 6L', price: 1000, img: 'img/inodorina-sand.webp', desc: 'Без запаха' },
-        { id: 12, name: 'Pro Plan Пробиотик кошки', price: 1700, img: 'img/proplan-probiotic.webp', desc: 'Поддержка ЖКТ' },
-        { id: 13, name: 'Ruffwear Харнес', price: 3500, img: 'img/ruffwear-harness.webp', desc: 'Универсальный' }
+        { id: 3, name: 'TIAKI Slow Feeder Mandala', price: 1800, img: 'img/tiaki-slow-feeder-mandala.webp', desc: 'Медленный фидер' },
+        { id: 4, name: 'Zesty Paws Healthy Aging', price: 2200, img: 'img/zesty-paws-healthy-aging.webp', desc: 'Для пожилых собак' },
+        { id: 5, name: 'Eheim Substrat Pro 720г', price: 1100, img: 'img/eheim-substrat-pro.webp', desc: 'Биофильтр аквариум' },
+        { id: 6, name: 'ZARAHOME Pet Bowl Stand', price: 1400, img: 'img/zarahome-pet-bowl-stand.webp', desc: 'Миска с подставкой' },
+        { id: 7, name: 'Rojeco Интерактивный мяч', price: 750, img: 'img/rojeco-interactive-ball.webp', desc: 'Для кошек' },
+        { id: 8, name: 'DERMOSCENT Крем для кожи', price: 1600, img: 'img/dermoscent-skin-cream.webp', desc: 'Уход за кожей' },
+        { id: 9, name: 'DERMOSCENT Pyoclean', price: 1300, img: 'img/dermoscent-pyoclean.webp', desc: 'Очиститель ушей' },
+        { id: 10, name: 'Trixie Пальто для собак', price: 1900, img: 'img/trixie-dog-coat.webp', desc: 'Теплая куртка' },
+        { id: 11, name: 'Inodorina Песок 6L', price: 1000, img: 'img/inodorina-sand-6l.webp', desc: 'Без запаха' },
+        { id: 12, name: 'Pro Plan Пробиотик кошки', price: 1700, img: 'img/pro-plan-cat-probiotic.webp', desc: 'Поддержка ЖКТ' },
+        { id: 13, name: 'Ruffwear Харнес', price: 3500, img: 'img/ruffwear-universal-harness.webp', desc: 'Универсальный' }
     ],
     cart: JSON.parse(localStorage.getItem('cart')) || [],
     user: JSON.parse(localStorage.getItem('user')) || { name: '', phone: '', email: '' },
