@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoohelper34 - Зоотовары Волгоград | E-commerce MVP</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" onclick="showSection('catalog')">🏠 Каталог</a>
+        <a href="#" onclick="showSection('cart')">🛒 Корзина (<span id="cartCount">0</span>)</a>
+        <a href="#" onclick="showSection('cabinet')">👤 Кабинет</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Zoohelper34</h1>
+            <p>Зоотовары и услуги для ваших любимцев в Волгограде</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Поиск кормов, наполнителей...">
+                <button onclick="searchProducts()">🔍 Найти</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Catalog Section -->
+    <section class="catalog" id="catalog">
+        <h2>Топ-13 товаров 4Partners</h2>
+        <div class="products-grid" id="productsGrid">
+            <p>Загрузка...</p>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="page-section cart-section">
+        <h2>🛒 Корзина</h2>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <strong>Итого: <span id="totalPrice">0</span>₽</strong>
+            <button onclick="checkout()">💳 Оформить (ЮKassa)</button>
+        </div>
+    </section>
+
+    <!-- Cabinet Section -->
+    <section id="cabinet" class="page-section cabinet">
+        <h2>👤 Личный кабинет</h2>
+        <div class="profile">
+            <h3>Профиль</h3>
+            <input id="userName" placeholder="Имя">
+            <input id="userPhone" placeholder="Телефон">
+            <input id="userEmail" placeholder="Email">
+            <button onclick="saveProfile()">💾 Сохранить</button>
+        </div>
+        <div class="orders">
+            <h3>📋 История заказов</h3>
+            <div id="ordersList"></div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
