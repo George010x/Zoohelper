@@ -6,7 +6,8 @@
 
 // Global State Management
 // 🔥 РЕАЛЬНЫЕ ФОТО из /img/ (TinyPNG качество)
-STATE.products = [
+const STATE = {
+    products: [
     { id: 1,  name: 'Bach Rescue Remedy Pet 10мл',  price: 1200, img: 'img/bach-rescue.webp',        desc: 'Антистресс пипетка 10мл' },
     { id: 2,  name: 'Gelacan Darling',              price: 950,  img: 'img/gelacan-darling.webp',   desc: 'Жевательная паста' },
     { id: 3,  name: 'TIAKI Silikon Slow Feeder',    price: 1800, img: 'img/tiaki-mandala.webp',    desc: 'Мандала медленный фидер' },
